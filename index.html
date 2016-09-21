@@ -2,20 +2,174 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Index</title>
+  <title>Bootstrap</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+  <style type="text/css">
+    .color1{
+      background: #ff4444;
+    }
+    .color2{
+      background: #33b5e5;
+    }
+  </style>
 </head>
 <body>
-  <h1>hola desde index</h1>
-  <header></header>
-  <section>
-    <ul>
-      <li>que pets 1</li>
-      <li>que pets 2</li>
-      <li>que pets 3</li>
-      <li>que pets 4</li>
-      <li>que pets 5</li>
-    </ul>
-  </section>
-  <footer></footer>
+  <!--<ul class="nav nav-tabs nav-justified">-->
+  <!--  <li class='active'><a href="#">boton_1</a></li>-->
+  <!--  <li class='disabled'><a href="#">boton_2</a></li>-->
+  <!--  <li><a href="#">boton_3</a></li>-->
+  <!--  <li><a href="#">boton_4</a></li>-->
+  <!--  <li class='dropdown'>-->
+  <!--    <a href="#" class='dropdown-toggle' data-toggle='dropdown'>boton_5 <span class="caret"></span></a>-->
+  <!--    <ul class='dropdown-menu'>-->
+  <!--      <li><a href="#">subMenu 1</a></li>-->
+  <!--      <li><a href="#">subMenu 2</a></li>-->
+  <!--      <li><a href="#">subMenu 3</a></li>-->
+  <!--    </ul>-->
+  <!--  </li>-->
+  <!--</ul>-->
+  <!--<nav class="navbar navbar-inverse navbar-fixed-top">-->
+  <!--  <div class="container-fluid">-->
+  <!--    <div class="navbar-header">-->
+  <!--      <button class="navbar-toggle" data-toggle='collapse' data-target='#collapse-1'>-->
+  <!--        <span class="icon-bar"></span>-->
+  <!--        <span class="icon-bar"></span>-->
+  <!--        <span class="icon-bar"></span>-->
+  <!--      </button>-->
+  <!--      <a href="#" class="navbar-brand">Lodela</a>-->
+  <!--    </div>-->
+  <!--    <div class="collapse navbar-collapse navbar-right" id="collapse-1">-->
+  <!--      <ul class="nav navbar-nav">-->
+  <!--        <li><a href="#">enlace1</a></li>-->
+  <!--        <li><a href="#">enlace2</a></li>-->
+  <!--        <li class='dropdown'>-->
+  <!--          <a href="#" class='dropdown-toggle' data-toggle='dropdown'>enlace3 <span class="caret"></span></a>-->
+  <!--          <ul class='dropdown-menu'>-->
+  <!--            <li><a href="">sub-menu1</a></li>-->
+  <!--            <li><a href="">sub-menu2</a></li>-->
+  <!--            <li class="divider"></li>-->
+  <!--            <li><a href="">sub-menu3</a></li>-->
+  <!--          </ul>-->
+  <!--        </li>-->
+  <!--      </ul>-->
+  <!--      <form class="navbar-form navbar-left">-->
+  <!--        <div class="form-group">-->
+  <!--          <input type="text" class="form-control" placeholder='buscar'>-->
+  <!--          <button class="btn btn-primary">go</button>-->
+  <!--        </div>-->
+  <!--      </form>-->
+  <!--    </div>-->
+  <!--  </div>-->
+  <!--</nav>-->
+  <header class="container-fluid">
+    <div class="row">
+      <nav class="nav navbar-default">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button class="navbar-toggle" data-toggle='collapse' data-target='#menuCollapse'>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <div class="navbar-brand visible-xs visible-sm"><a href="#">lodela1</a></div>
+            <div class="navbar-brand visible-md visible-lg"><a href="#">lodela2</a></div>
+          </div>
+          <div class="collapse navbar-collapse" id="menuCollapse">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="">boton_1</a></li>
+              <li><a href="">boton_2</a></li>
+              <li><a href="">boton_3</a></li>
+            </ul>
+            
+          </div>
+        </div>
+      </nav>
+      
+    </div>
+  </header>
+  <div class="container color1">
+    <div class="row" style='border: solid 1px white'>
+      <div class="col-sm-4">Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+      sed diam nonummy nibh euismod tincidunt ut laoreet dolore
+      magna aliquam erat volutpat. Ut wisi enim ad minim veniam,
+      quis nostrud exerci tation ullamcorper suscipit lobortis nisl
+      ut aliquip ex ea commodo consequat. Duis autem vel eum iriure
+      dolor in hendrerit in vulputate velit esse molestie consequat
+      </div>
+      <div class="col-sm-4"> vel illum dolore eu feugiat nulla facilisis at vero eros et
+      accumsan et iusto odio dignissim qui blandit praesent luptatum
+      zzril delenit augue duis dolore te feugait nulla facilisi.
+      Nam liber tempor cum soluta nobis eleifend option congue
+      nihil imperdiet doming id quod mazim placerat facer possim</div>
+      <div class="col-sm-4">assum. Typi non habent claritatem insitam; est usus legentis
+      in iis qui facit eorum claritatem. Investigationes
+      demonstraverunt lectores legere me lius quod ii legunt saepius.
+      Claritas est etiam processus dynamicus, qui sequitur mutationem
+      consuetudium lectorum. Mirum est notare quam littera gothica,
+      quam nunc putamus parum claram, anteposuerit litterarum formas
+      humanitatis per seacula quarta decima et quinta decima. Eodem
+      modo typi, qui nunc nobis videntur parum clari, fiant sollemnes
+      in futurum.</div>
+    </div>
+  </div>
+  <div class="container-fluid color2">
+    <div class="row">
+      <div class="col-sm-6">Claritas est etiam processus dynamicus, qui sequitur mutationem
+      consuetudium lectorum. Mirum est notare quam littera gothica,
+      quam nunc putamus parum claram, anteposuerit litterarum formas
+      humanitatis per seacula quarta decima et quinta decima. Eodem
+      modo typi, qui nunc nobis videntur parum clari, fiant sollemnes
+      in futurum.</div>
+      <div class="col-sm-6">sed diam nonummy nibh euismod tincidunt ut laoreet dolore
+      magna aliquam erat volutpat. Ut wisi enim ad minim veniam,
+      quis nostrud exerci tation ullamcorper suscipit lobortis nisl
+      ut aliquip ex ea commodo consequat. Duis autem vel eum iriure
+      dolor in hendrerit in vulputate velit esse molestie consequat</div>
+    </div>
+  </div>
+  <div class="clearfix visible-md visible-lg" style='border:solid 1px blue'></div>
+  <div class="container" style=' background:green'>
+    <div class="row">
+      <div class="col-xs-12 col-sm-4 col-md-2 col-lg-4" style='border:solid 1px white;'>Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+      sed diam nonummy nibh euismod tincidunt ut laoreet dolore
+      magna aliquam erat volutpat. Ut wisi enim ad minim veniam,
+      quis nostrud exerci tation ullamcorper suscipit lobortis nisl
+      ut aliquip ex ea commodo consequat. Duis autem vel eum
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4" style='border:solid 1px white;'>assum. Typi non habent claritatem insitam; est usus legentis
+      in iis qui facit eorum claritatem. Investigationes
+      demonstraverunt lectores legere me lius quod ii legunt saepius.
+      Claritas est etiam processus dynamicus, qui sequitur mutationem
+      consuetudium lectorum. Mirum est notare quam littera gothica,
+      quam nunc putamus parum claram, anteposuerit litterarum formas
+      humanitatis per seacula quarta decima et quinta decima. Eodem
+      modo typi, qui nunc nobis videntur parum clari, fiant sollemnes
+      in futurum.</div>
+      <div class="col-xs-12 col-sm-2 col-md-4 col-lg-4" style='border:solid 1px white;'>
+        dolor in hendrerit in vulputate velit esse molestie consequat,
+      vel illum dolore eu feugiat nulla facilisis at vero eros et
+      accumsan et iusto odio dignissim qui blandit praesent luptatum
+      zzril delenit augue duis dolore te feugait nulla facilisi.
+      Nam liber tempor cum soluta nobis eleifend option congue
+      nihil imperdiet doming id quod mazim placerat facer possim
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-sx-12 col-sm-6 col-md-4 col-lg-push-8 color1">
+        <h1>col 1</h1>
+      </div>
+      <div class="col-sx-12 col-sm-6 col-md-8 col-lg-pull-4 color2">
+        <h1>col 2</h1>
+      </div>
+    </div>
+  </div>
+<script>window.JQuery || document.write('<script   src="https://code.jquery.com/jquery-3.1.0.slim.min.js"   integrity="sha256-cRpWjoSOw5KcyIOaZNo4i6fZ9tKPhYYb6i5T9RSVJG8="   crossorigin="anonymous"><\/script>')</script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script>
+  //alert('que pets');
+</script>
 </body>
 </html>

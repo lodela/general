@@ -1,5 +1,5 @@
 <?php
-$today = '31 Agosto 2016';
+$today = '21 Septiembre 2016';
 $day = 'Miercoles';
 
 $addrs = 'http://p88.capitalmedia.mx/Edimpress/'.$day;
@@ -10,10 +10,15 @@ function links($arr, $addrs){
     while (list(, $value) = each($arr)) {
         $pdf = $addrs.'/PDF/'.$value.'.pdf';
         $img = $addrs.'/thumb/'.$value.'.jpeg';
-        echo '<li style="width:180px; position:relative; float:left; margin: 5px; border:solid 1px rgba(0,0,0,0.3);"><a href="'.$pdf.'" target="_blank"><img src="'.$img.'" style="max-height:233px;"></img></a>';
+        $zip = $addrs.'/download/'.$value.'.zip';
+        echo '
+            <li style="width:180px; position:relative; float:left; margin: 5px; border:solid 1px rgba(0,0,0,0.3);">
+             <a href="'.$pdf.'" target="_blank"><img src="'.$img.'" style="max-height:233px;"></img></a>
+             <!-- <a><img src="'.$img.'" style="max-height:233px;"></img></a> -->
+             <a href="'.$zip.'" target="_blank" style="font-size:12px; color:grey; text-align:center !important; width:180px !important; border:solid 1px grey; border-width:1px 0 0 0; margin:0 auto; display:block; text-decoration:none;">'.$value.'.zip</a>
+            </li>';
     }
 }
-
 
 ?>
 
@@ -31,7 +36,8 @@ function links($arr, $addrs){
             <img src="http://www.capitalmedia.mx/EdicionesImpresas/img/logo-top.png" style="float:left;margin:0px;padding:0px;border:none;display:block;">
         </div>
         <br>
-        <i style="max-width:600px;display:block;float:left;padding:0px 0px 10px 20px;border-style:solid;border-color:rgb(204,204,204);border-width:0px 0px 1px;text-align:left"><b>PDF</b> de las ediciones del <b><?php echo $today; ?></b> da click sobre la edición.</i>
+        <i style="max-width:690px;display:block;float:left;padding:0px 0px 10px 20px;border-style:solid;border-color:rgb(204,204,204);border-width:0px 0px 1px;text-align:left; line-height:25px;"><b>Ver PDF</b> de las ediciones del <b><?php echo $today; ?></b> da click sobre la edición.<br><b>Descarga</b> el archivo en formato <b>.zip</b> dando click sobre el nombre de la edición al pie de cada una.</i>
+        <!-- <i style="max-width:690px;display:block;float:left;padding:0px 0px 10px 20px;border-style:solid;border-color:rgb(204,204,204);border-width:0px 0px 1px;text-align:left; line-height:25px;">Ediciones del <b><?php echo $today; ?></b><br><b>Descarga</b> el archivo en formato <b>.zip</b> dando click sobre el nombre de la edición al pie de cada una.</i> -->
         <ul style="list-style:none;font-family:Arial,Helvetica,sans-serif;color:rgb(102,102,102);line-height:25px;float:left; padding:10px;">
             <?php links($editorial, $addrs); ?>
         </ul>
