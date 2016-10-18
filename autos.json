@@ -1,0 +1,23 @@
+{
+  "autos" :
+  [
+    {"nissan":
+      [
+        {"subMarca": "altima","precio": "378,000"},
+        {"subMarca": "x-trail","precio": "354,000"},
+        {"subMarca": "versa","precio": "178,900"},
+        {"subMarca": "sentra","precio": "238,900"},
+        {"subMarca": "march","precio": "162,500"}
+      ]
+    },
+    {"ford":
+      [
+        {"subMarca":"figo","precio":"170,950"},
+        {"subMarca":"focus","precio":"261,900"},
+        {"subMarca":"mustang","precio":"509,900"},
+        {"subMarca":"Escape","precio":"346,900"},
+        {"subMarca":"expedition","precio":"771,700"}
+      ]
+    }
+  ]
+}
